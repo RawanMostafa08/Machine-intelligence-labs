@@ -1,1 +1,4 @@
 __pycache__
+*.zip
+student_info.json
+.vscode

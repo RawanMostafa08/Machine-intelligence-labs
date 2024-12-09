@@ -1,0 +1,50 @@
+
+Problem Set 2: CSP and Games
+
+Problem: Cryptarithmetic Puzzles
+1: Puzzle 1 :: time-limit = 0.30208949247996014 sec
+Result: FAIL 0/1 - Expected a solution but no solution was returned
+Puzzle: GO + TO = OUT
+Input positional arguments:
+- 'cryptarithmetic.CryptArithmeticProblem'
+- 'puzzles/puzzle_1.txt'
+
+2: Puzzle 2 :: time-limit = 0.30208949247996014 sec
+Result: FAIL 0/1 - Expected a solution but no solution was returned
+Puzzle: TWO + TWO = FOUR
+Input positional arguments:
+- 'cryptarithmetic.CryptArithmeticProblem'
+- 'puzzles/puzzle_2.txt'
+
+3: Puzzle 3 :: time-limit = 0.30208949247996014 sec
+Result: FAIL 0/1 - Expected a solution but no solution was returned
+Puzzle: SEND + MORE = MONEY
+Input positional arguments:
+- 'cryptarithmetic.CryptArithmeticProblem'
+- 'puzzles/puzzle_3.txt'
+
+4: Puzzle 4 :: time-limit = 0.30208949247996014 sec
+Result: FAIL 0/1 - Expected a solution but no solution was returned
+Puzzle: LEE + LET = ALL
+Input positional arguments:
+- 'cryptarithmetic.CryptArithmeticProblem'
+- 'puzzles/puzzle_4.txt'
+
+5: Puzzle 5 :: time-limit = 0.30208949247996014 sec
+Result: FAIL 0/1 - Expected a solution but no solution was returned
+Puzzle: KANSAS + OHIO = OREGON
+Input positional arguments:
+- 'cryptarithmetic.CryptArithmeticProblem'
+- 'puzzles/puzzle_5.txt'
+
+6: Puzzle 6 :: time-limit = 0.30208949247996014 sec
+Result: FAIL 0/1 - Expected a solution but no solution was returned
+Puzzle: POINT + ZERO = ENERGY
+Input positional arguments:
+- 'cryptarithmetic.CryptArithmeticProblem'
+- 'puzzles/puzzle_6.txt'
+
+Total 0/6
+
+Problem Set Total 0/6
+
