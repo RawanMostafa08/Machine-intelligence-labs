@@ -1,0 +1,288 @@
+
+Problem Set 1: Search
+
+Problem: Q-Learning
+1: Grid 3 (Discount = 1.0, Iterations = 2) :: time-limit = 0.9731870492299398 sec
+Result: FAIL 0/1 - Traceback (most recent call last):
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/autograder.py", line 34, in _call
+    output = fn(*input_args.args, **input_args.kwargs)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/helpers/test_tools.py", line 214, in run_rl_agent
+    training_loop(env, agent, iterations, step_limit, seed)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/training_loops.py", line 76, in q_agent_training_loop
+    agent.update(env, state, action, reward, next_state, done)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/reinforcement_learning.py", line 164, in update
+    self.Q[state][action] += self.learning_rate * (reward + (self.discount_factor * max_next_q) - self.compute_q(env, state, action))
+UnboundLocalError: local variable 'max_next_q' referenced before assignment
+
+Input keyword arguments:
+- agent: load_function('reinforcement_learning.QLearningAgent')(ACTIONS, 1.0, 0, 0.1, 1234)
+- training_loop: q_agent_training_loop
+- env: GridEnv.from_file('grids/grid3.json', Point(0,2))
+- iterations: 2
+- step_limit: -1
+- seed: 1234
+
+2: Grid 3 (Discount = 1.0, Iterations = 2, Exploration = 50%) :: time-limit = 0.9731870492299398 sec
+Result: FAIL 0/1 - Traceback (most recent call last):
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/autograder.py", line 34, in _call
+    output = fn(*input_args.args, **input_args.kwargs)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/helpers/test_tools.py", line 214, in run_rl_agent
+    training_loop(env, agent, iterations, step_limit, seed)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/training_loops.py", line 76, in q_agent_training_loop
+    agent.update(env, state, action, reward, next_state, done)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/reinforcement_learning.py", line 164, in update
+    self.Q[state][action] += self.learning_rate * (reward + (self.discount_factor * max_next_q) - self.compute_q(env, state, action))
+UnboundLocalError: local variable 'max_next_q' referenced before assignment
+
+Input keyword arguments:
+- agent: load_function('reinforcement_learning.QLearningAgent')(ACTIONS, 1.0, 0.5, 0.1, 1234)
+- training_loop: q_agent_training_loop
+- env: GridEnv.from_file('grids/grid3.json', Point(0,2))
+- iterations: 2
+- step_limit: -1
+- seed: 1234
+
+3: Grid 3 (Discount = 1.0, Iterations = 10, Exploration = 50%) :: time-limit = 0.9731870492299398 sec
+Result: FAIL 0/1 - Traceback (most recent call last):
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/autograder.py", line 34, in _call
+    output = fn(*input_args.args, **input_args.kwargs)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/helpers/test_tools.py", line 214, in run_rl_agent
+    training_loop(env, agent, iterations, step_limit, seed)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/training_loops.py", line 76, in q_agent_training_loop
+    agent.update(env, state, action, reward, next_state, done)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/reinforcement_learning.py", line 164, in update
+    self.Q[state][action] += self.learning_rate * (reward + (self.discount_factor * max_next_q) - self.compute_q(env, state, action))
+UnboundLocalError: local variable 'max_next_q' referenced before assignment
+
+Input keyword arguments:
+- agent: load_function('reinforcement_learning.QLearningAgent')(ACTIONS, 1.0, 0.5, 0.1, 1234)
+- training_loop: q_agent_training_loop
+- env: GridEnv.from_file('grids/grid3.json', Point(0,2))
+- iterations: 10
+- step_limit: -1
+- seed: 1234
+
+4: Grid 3 (Discount = 1.0, Iterations = 2000, Step-Limit = 20, Exploration = 25%) :: time-limit = 0.9731870492299398 sec
+Result: FAIL 0/1 - Traceback (most recent call last):
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/autograder.py", line 34, in _call
+    output = fn(*input_args.args, **input_args.kwargs)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/helpers/test_tools.py", line 214, in run_rl_agent
+    training_loop(env, agent, iterations, step_limit, seed)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/training_loops.py", line 76, in q_agent_training_loop
+    agent.update(env, state, action, reward, next_state, done)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/reinforcement_learning.py", line 164, in update
+    self.Q[state][action] += self.learning_rate * (reward + (self.discount_factor * max_next_q) - self.compute_q(env, state, action))
+UnboundLocalError: local variable 'max_next_q' referenced before assignment
+
+Input keyword arguments:
+- agent: load_function('reinforcement_learning.QLearningAgent')(ACTIONS, 1.0, 0.25, 0.1, 1234)
+- training_loop: q_agent_training_loop
+- env: GridEnv.from_file('grids/grid3.json', Point(0,2))
+- iterations: 2000
+- step_limit: 20
+- seed: 1234
+
+5: Grid 5 (Discount = 1.0, Iterations = 2) :: time-limit = 0.9731870492299398 sec
+Result: FAIL 0/1 - Traceback (most recent call last):
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/autograder.py", line 34, in _call
+    output = fn(*input_args.args, **input_args.kwargs)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/helpers/test_tools.py", line 214, in run_rl_agent
+    training_loop(env, agent, iterations, step_limit, seed)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/training_loops.py", line 76, in q_agent_training_loop
+    agent.update(env, state, action, reward, next_state, done)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/reinforcement_learning.py", line 164, in update
+    self.Q[state][action] += self.learning_rate * (reward + (self.discount_factor * max_next_q) - self.compute_q(env, state, action))
+UnboundLocalError: local variable 'max_next_q' referenced before assignment
+
+Input keyword arguments:
+- agent: load_function('reinforcement_learning.QLearningAgent')(ACTIONS, 1.0, 0, 0.1, 1234)
+- training_loop: q_agent_training_loop
+- env: GridEnv.from_file('grids/grid5.json', Point(0,2))
+- iterations: 2
+- step_limit: -1
+- seed: 1234
+
+6: Grid 5 (Discount = 1.0, Iterations = 2, Exploration = 50%) :: time-limit = 0.9731870492299398 sec
+Result: FAIL 0/1 - Traceback (most recent call last):
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/autograder.py", line 34, in _call
+    output = fn(*input_args.args, **input_args.kwargs)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/helpers/test_tools.py", line 214, in run_rl_agent
+    training_loop(env, agent, iterations, step_limit, seed)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/training_loops.py", line 76, in q_agent_training_loop
+    agent.update(env, state, action, reward, next_state, done)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/reinforcement_learning.py", line 164, in update
+    self.Q[state][action] += self.learning_rate * (reward + (self.discount_factor * max_next_q) - self.compute_q(env, state, action))
+UnboundLocalError: local variable 'max_next_q' referenced before assignment
+
+Input keyword arguments:
+- agent: load_function('reinforcement_learning.QLearningAgent')(ACTIONS, 1.0, 0.5, 0.1, 1234)
+- training_loop: q_agent_training_loop
+- env: GridEnv.from_file('grids/grid5.json', Point(0,2))
+- iterations: 2
+- step_limit: -1
+- seed: 1234
+
+7: Grid 5 (Discount = 1.0, Iterations = 10, Exploration = 50%) :: time-limit = 0.9731870492299398 sec
+Result: FAIL 0/1 - Traceback (most recent call last):
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/autograder.py", line 34, in _call
+    output = fn(*input_args.args, **input_args.kwargs)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/helpers/test_tools.py", line 214, in run_rl_agent
+    training_loop(env, agent, iterations, step_limit, seed)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/training_loops.py", line 76, in q_agent_training_loop
+    agent.update(env, state, action, reward, next_state, done)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/reinforcement_learning.py", line 164, in update
+    self.Q[state][action] += self.learning_rate * (reward + (self.discount_factor * max_next_q) - self.compute_q(env, state, action))
+UnboundLocalError: local variable 'max_next_q' referenced before assignment
+
+Input keyword arguments:
+- agent: load_function('reinforcement_learning.QLearningAgent')(ACTIONS, 1.0, 0.5, 0.1, 1234)
+- training_loop: q_agent_training_loop
+- env: GridEnv.from_file('grids/grid5.json', Point(0,2))
+- iterations: 10
+- step_limit: -1
+- seed: 1234
+
+8: Grid 5 (Discount = 1.0, Iterations = 2000, Step-Limit = 20, Exploration = 25%) :: time-limit = 0.9731870492299398 sec
+Result: FAIL 0/1 - Traceback (most recent call last):
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/autograder.py", line 34, in _call
+    output = fn(*input_args.args, **input_args.kwargs)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/helpers/test_tools.py", line 214, in run_rl_agent
+    training_loop(env, agent, iterations, step_limit, seed)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/training_loops.py", line 76, in q_agent_training_loop
+    agent.update(env, state, action, reward, next_state, done)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/reinforcement_learning.py", line 164, in update
+    self.Q[state][action] += self.learning_rate * (reward + (self.discount_factor * max_next_q) - self.compute_q(env, state, action))
+UnboundLocalError: local variable 'max_next_q' referenced before assignment
+
+Input keyword arguments:
+- agent: load_function('reinforcement_learning.QLearningAgent')(ACTIONS, 1.0, 0.25, 0.1, 1234)
+- training_loop: q_agent_training_loop
+- env: GridEnv.from_file('grids/grid5.json', Point(0,2))
+- iterations: 2000
+- step_limit: 20
+- seed: 1234
+
+9: Grid 4 (Discount = 1.0, Iterations = 2) :: time-limit = 0.9731870492299398 sec
+Result: FAIL 0/1 - Traceback (most recent call last):
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/autograder.py", line 34, in _call
+    output = fn(*input_args.args, **input_args.kwargs)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/helpers/test_tools.py", line 214, in run_rl_agent
+    training_loop(env, agent, iterations, step_limit, seed)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/training_loops.py", line 76, in q_agent_training_loop
+    agent.update(env, state, action, reward, next_state, done)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/reinforcement_learning.py", line 164, in update
+    self.Q[state][action] += self.learning_rate * (reward + (self.discount_factor * max_next_q) - self.compute_q(env, state, action))
+UnboundLocalError: local variable 'max_next_q' referenced before assignment
+
+Input keyword arguments:
+- agent: load_function('reinforcement_learning.QLearningAgent')(ACTIONS, 1.0, 0, 0.1, 1234)
+- training_loop: q_agent_training_loop
+- env: GridEnv.from_file('grids/grid4.json', Point(0,2))
+- iterations: 2
+- step_limit: -1
+- seed: 1234
+
+10: Grid 4 (Discount = 1.0, Iterations = 2000, Step-Limit = 20, Exploration = 25%) :: time-limit = 0.9731870492299398 sec
+Result: FAIL 0/1 - Traceback (most recent call last):
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/autograder.py", line 34, in _call
+    output = fn(*input_args.args, **input_args.kwargs)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/helpers/test_tools.py", line 214, in run_rl_agent
+    training_loop(env, agent, iterations, step_limit, seed)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/training_loops.py", line 76, in q_agent_training_loop
+    agent.update(env, state, action, reward, next_state, done)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/reinforcement_learning.py", line 164, in update
+    self.Q[state][action] += self.learning_rate * (reward + (self.discount_factor * max_next_q) - self.compute_q(env, state, action))
+UnboundLocalError: local variable 'max_next_q' referenced before assignment
+
+Input keyword arguments:
+- agent: load_function('reinforcement_learning.QLearningAgent')(ACTIONS, 1.0, 0.25, 0.1, 1234)
+- training_loop: q_agent_training_loop
+- env: GridEnv.from_file('grids/grid4.json', Point(0,2))
+- iterations: 2000
+- step_limit: 20
+- seed: 1234
+
+11: Grid 3 (Discount = 0.5, Iterations = 10, Step-Limit = 2) :: time-limit = 0.9731870492299398 sec
+Result: FAIL 0/1 - Traceback (most recent call last):
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/autograder.py", line 34, in _call
+    output = fn(*input_args.args, **input_args.kwargs)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/helpers/test_tools.py", line 214, in run_rl_agent
+    training_loop(env, agent, iterations, step_limit, seed)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/training_loops.py", line 76, in q_agent_training_loop
+    agent.update(env, state, action, reward, next_state, done)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/reinforcement_learning.py", line 164, in update
+    self.Q[state][action] += self.learning_rate * (reward + (self.discount_factor * max_next_q) - self.compute_q(env, state, action))
+UnboundLocalError: local variable 'max_next_q' referenced before assignment
+
+Input keyword arguments:
+- agent: load_function('reinforcement_learning.QLearningAgent')(ACTIONS, 0.5, 0, 0.1, 1234)
+- training_loop: q_agent_training_loop
+- env: GridEnv.from_file('grids/grid3.json', Point(0,2))
+- iterations: 10
+- step_limit: 2
+- seed: 1234
+
+12: Grid 1 (Discount = 1.0, Iterations = 2000, Step-Limit = 20, Exploration = 25%) :: time-limit = 0.9731870492299398 sec
+Result: FAIL 0/1 - Traceback (most recent call last):
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/autograder.py", line 34, in _call
+    output = fn(*input_args.args, **input_args.kwargs)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/helpers/test_tools.py", line 214, in run_rl_agent
+    training_loop(env, agent, iterations, step_limit, seed)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/training_loops.py", line 76, in q_agent_training_loop
+    agent.update(env, state, action, reward, next_state, done)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/reinforcement_learning.py", line 164, in update
+    self.Q[state][action] += self.learning_rate * (reward + (self.discount_factor * max_next_q) - self.compute_q(env, state, action))
+UnboundLocalError: local variable 'max_next_q' referenced before assignment
+
+Input keyword arguments:
+- agent: load_function('reinforcement_learning.QLearningAgent')(ACTIONS, 1.0, 0.25, 0.1, 1234)
+- training_loop: q_agent_training_loop
+- env: GridEnv.from_file('grids/grid1.json', Point(0,2))
+- iterations: 2000
+- step_limit: 20
+- seed: 1234
+
+13: Grid 2 (Discount = 1.0, Iterations = 4000, Step-Limit = 40, Exploration = 25%) :: time-limit = 0.9731870492299398 sec
+Result: FAIL 0/1 - Traceback (most recent call last):
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/autograder.py", line 34, in _call
+    output = fn(*input_args.args, **input_args.kwargs)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/helpers/test_tools.py", line 214, in run_rl_agent
+    training_loop(env, agent, iterations, step_limit, seed)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/training_loops.py", line 76, in q_agent_training_loop
+    agent.update(env, state, action, reward, next_state, done)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/reinforcement_learning.py", line 164, in update
+    self.Q[state][action] += self.learning_rate * (reward + (self.discount_factor * max_next_q) - self.compute_q(env, state, action))
+UnboundLocalError: local variable 'max_next_q' referenced before assignment
+
+Input keyword arguments:
+- agent: load_function('reinforcement_learning.QLearningAgent')(ACTIONS, 1.0, 0.25, 0.1, 1234)
+- training_loop: q_agent_training_loop
+- env: GridEnv.from_file('grids/grid2.json')
+- iterations: 4000
+- step_limit: 40
+- seed: 1234
+
+14: Grid 6 (Discount = 1.0, Iterations = 4000, Step-Limit = 40, Exploration = 25%) :: time-limit = 0.9731870492299398 sec
+Result: FAIL 0/1 - Traceback (most recent call last):
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/autograder.py", line 34, in _call
+    output = fn(*input_args.args, **input_args.kwargs)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/helpers/test_tools.py", line 214, in run_rl_agent
+    training_loop(env, agent, iterations, step_limit, seed)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/training_loops.py", line 76, in q_agent_training_loop
+    agent.update(env, state, action, reward, next_state, done)
+  File "/media/rawan/New Volume/CMP4/MI/Machine intelligence labs/Problem Set 3/reinforcement_learning.py", line 164, in update
+    self.Q[state][action] += self.learning_rate * (reward + (self.discount_factor * max_next_q) - self.compute_q(env, state, action))
+UnboundLocalError: local variable 'max_next_q' referenced before assignment
+
+Input keyword arguments:
+- agent: load_function('reinforcement_learning.QLearningAgent')(ACTIONS, 1.0, 0.25, 0.1, 1234)
+- training_loop: q_agent_training_loop
+- env: GridEnv.from_file('grids/grid6.json')
+- iterations: 4000
+- step_limit: 40
+- seed: 1234
+
+Total 0/14
+
+Problem Set Total 0/14
+
